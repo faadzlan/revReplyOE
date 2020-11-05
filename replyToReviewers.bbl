@@ -1,0 +1,46 @@
+\begin{thebibliography}{3}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Koide et~al.(2013)Koide, Sekizaki, Yamada, Takahashi and
+  Shirakashi}]{Koide2013}
+\bibinfo{author}{Koide, M.}, \bibinfo{author}{Sekizaki, T.},
+  \bibinfo{author}{Yamada, S.}, \bibinfo{author}{Takahashi, T.},
+  \bibinfo{author}{Shirakashi, M.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{{Prospect of Micro Power Generation Utilizing VIV in
+  Small Stream Based on Verification Experiments of Power Generation in Water
+  Tunnel}}.
+\newblock \bibinfo{journal}{Journal of Fluid Science and Technology}
+  \bibinfo{volume}{8}, \bibinfo{pages}{294--308}.
+\newblock \DOIprefix\doi{10.1299/jfst.8.294}.
+%Type = Article
+\bibitem[{Koide et~al.(2017)Koide, Takahashi, Shirakashi and Salim}]{Koide2017}
+\bibinfo{author}{Koide, M.}, \bibinfo{author}{Takahashi, T.},
+  \bibinfo{author}{Shirakashi, M.}, \bibinfo{author}{Salim, S.A.Z.B.S.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Three-dimensional structure of longitudinal vortices
+  shedding from cruciform two-cylinder systems with different geometries}}.
+\newblock \bibinfo{journal}{Journal of Visualization} , \bibinfo{pages}{1--11}.
+%Type = Article
+\bibitem[{Nguyen et~al.(2012)Nguyen, Koide, Yamada, Takahashi and
+  Shirakashi}]{Nguyen2012}
+\bibinfo{author}{Nguyen, T.}, \bibinfo{author}{Koide, M.},
+  \bibinfo{author}{Yamada, S.}, \bibinfo{author}{Takahashi, T.},
+  \bibinfo{author}{Shirakashi, M.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{{Influence of mass and damping ratios on VIVs of a
+  cylinder with a downstream counterpart in cruciform arrangement}}.
+\newblock \bibinfo{journal}{Journal of Fluids and Structures}
+  \bibinfo{volume}{28}, \bibinfo{pages}{40--55}.
+\newblock \DOIprefix\doi{10.1016/j.jfluidstructs.2011.10.006}.
+
+\end{thebibliography}

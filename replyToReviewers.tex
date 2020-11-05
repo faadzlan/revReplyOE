@@ -1,0 +1,190 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{color}
+\usepackage[authoryear]{natbib}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage{setspace}
+\usepackage[dvipsnames]{xcolor}
+
+\newcounter{question}
+\newcommand{\name}{00}
+
+\renewcommand{\thefigure}{R\arabic{figure}}
+\renewcommand{\thetable}{R\arabic{table}}
+
+\newcommand{\question}[1]{\stepcounter{question} \noindent \textbf{Comment \name.\thequestion} \emph{#1}\\}
+
+\newcommand{\answer}[1]{\noindent \textbf{Answer to \name.\thequestion} #1 \mbox{}\\}
+
+\newcommand{\newperson}[2]{\renewcommand{\name}{#2} \setcounter{question}{0} \noindent \textbf{\large Answers to #1} \\}
+
+\begin{document}
+
+% Macros for commmon symbols <<<
+\newcommand{\ypl}{y^{+}} %yPlus
+\newcommand{\ured}{U^{*}} %reduced velocity
+\newcommand{\yrms}{y^{*}_{\text{RMS}}} %root-mean-square of the normalised cylinder displacement
+\newcommand{\ystr}{y^{*}} %the normalised cylinder displacement
+\newcommand{\fstr}{f^{*}} %the normalised vibration frequency
+\newcommand{\fn}{f_{n}} %system natural frequency
+\newcommand{\fk}{f_{k}} %the coarsest grid in a grid independence study
+\newcommand{\fvstr}{f^{*}_{v}} %normalise vortex shedding frequency
+\newcommand{\fvk}{f_{v,\text{Karman}}} %Karman vortex shedding frequency
+\newcommand{\fvkstr}{f^{*}_{v,\text{Karman}}} %normalised Karman vortex shedding frequency
+\newcommand{\fcyl}{f_{\text{cyl.}}} %frequency of cylinder vibration
+\newcommand{\fosc}{f_{\text{osc.}}} %frequency of cylinder oscillation
+\newcommand{\fclstr}{f_{\text{Cl}}^{*}} %normalised frequency of lift coefficient
+\newcommand{\flrms}{F_{\text{L,RMS}}} %root-mean-square of the lift force
+\newcommand{\fl}{F_{\text{L}}} %the lift force
+\newcommand{\clrms}{\text{Cl}_{\text{RMS}}} %root-mean-square of the lift coefficient
+\newcommand{\cflyt}{C_{F_{L},y(t)}} %IMF component of lift that is most similar to the displacement signal in terms of temporal evolution of amplitude and frequency, differing only perhaps in phase OR the component of lift with the highest correlation to the displacement signal
+\newcommand{\cflkrms}{C_{F_{L},\text{Karman},\text{RMS}}} %the Karman component of lift
+\newcommand{\cflsrms}{C_{F_{L},\text{streamwise},\text{RMS}}} %the streamwise component of lift
+\newcommand{\ccli}{C_{\text{Cl},i}} %the ith component of lift coefficient
+\newcommand{\cclystr}{C_{\text{Cl},\ystr}} %the ith component of lift coefficient
+\newcommand{\cflm}{C_{F_{L},\text{max}}} %IMF component of lift that has maximum RMS amplitude in the IMF set
+\newcommand{\cyrms}{C_{y,\text{RMS}}} %the RMS of the component of lift that is most correlated with the cylinder displacement signal
+\newcommand{\cclrms}{C_{\text{Cl},\text{RMS}}} %the RMS of the component of lift that is most correlated with the cylinder displacement signal (new symbol)
+\newcommand{\cysys}{C_{\ystr,\ystr}} %the characteristic IMF representing the normalised cylinder displacement
+\newcommand{\cclys}{C_{\text{Cl},\ystr}} %the characteristic IMF representing the lift coefficient
+\newcommand{\afl}{\alpha_{F_{L}}} %ratio between two dominant IMF components of the lift
+
+\newcommand{\angfi}{\SI{90}{\degree}} %90 deg. angle
+\newcommand{\angfo}{\SI{67.5}{\degree}} %67.5 deg. angle
+\newcommand{\angth}{\SI{45}{\degree}} %45 deg. angle
+\newcommand{\angtw}{\SI{22.5}{\degree}} %22.5 deg. angle
+\newcommand{\angon}{\SI{0}{\degree}} %0 deg. angle
+
+\newcommand{\pfrms}{P_{\text{Fluid,RMS}}} %estimated root-mean-square of fluid power
+\newcommand{\pmrms}{P_{\text{Mech.,RMS}}} %estimated root-mean-square of mechanical power
+\newcommand{\etamech}{\eta_{\text{Mech.}}} %mechanical power efficiency
+\newcommand{\re}{\text{Re}} %Reynolds number
+\newcommand{\st}{\text{St}} %Strouhal number
+\newcommand{\plag}{\theta_{y-\text{Cl}}} %Characteristic phase lag
+\newcommand{\phim}{\phi_{\text{mean}}} %mean phase lag
+\newcommand{\wcl}{W_{\text{cyl.}}} %mean work done by cylinder over one cycle of vibration
+\newcommand{\tosc}{T_{\text{osc.}}} %mean period of cylinder oscillation
+\newcommand{\meff}{m_{\text{eff.}}} %effective mass
+\newcommand{\zetatot}{\zeta_{tot.}} %total damping of the system
+
+%Macros that are shorthands in writing
+\newcommand{\rms}{root-mean-square} %shorthand for root-mean-square
+
+%Macros used in writing section on GCI study
+\newcommand{\rp}{r^{p}} %refinement ratio, used in GCI study
+\newcommand{\fre}{f_{\text{RE}}} %Richardson extrapolation of quantity of interest, used in GCI study
+
+%The macros for freestream velocities
+\newcommand{\uon}{\SI[per-mode=symbol]{0.1}{\metre\per\second}}
+\newcommand{\utw}{\SI[per-mode=symbol]{0.2}{\metre\per\second}}
+\newcommand{\uth}{\SI[per-mode=symbol]{0.3}{\metre\per\second}}
+\newcommand{\ufo}{\SI[per-mode=symbol]{0.4}{\metre\per\second}}
+\newcommand{\ufi}{\SI[per-mode=symbol]{0.5}{\metre\per\second}}
+\newcommand{\usi}{\SI[per-mode=symbol]{0.6}{\metre\per\second}}
+\newcommand{\use}{\SI[per-mode=symbol]{0.7}{\metre\per\second}}
+\newcommand{\uei}{\SI[per-mode=symbol]{0.8}{\metre\per\second}}
+\newcommand{\uni}{\SI[per-mode=symbol]{0.9}{\metre\per\second}}
+\newcommand{\ute}{\SI[per-mode=symbol]{1.0}{\metre\per\second}}
+\newcommand{\uel}{\SI[per-mode=symbol]{1.1}{\metre\per\second}}
+\newcommand{\utv}{\SI[per-mode=symbol]{1.2}{\metre\per\second}}
+\newcommand{\utt}{\SI[per-mode=symbol]{1.3}{\metre\per\second}}
+
+\newcommand{\uron}{2.3}
+\newcommand{\urtw}{4.5}
+\newcommand{\urth}{6.8}
+\newcommand{\urfo}{9.1}
+\newcommand{\urfi}{11.4}
+\newcommand{\ursi}{13.6}
+\newcommand{\urse}{15.9}
+\newcommand{\urei}{18.2}
+\newcommand{\urni}{20.5}
+\newcommand{\urte}{22.7}
+\newcommand{\urel}{25.0}
+\newcommand{\urtv}{27.3}
+\newcommand{\urtt}{29.5}
+% >>>
+% Opening remarks <<<
+\noindent {\Large \textbf{Response to the reviewers for paper OE-D20-01516: \emph{Evolution of Lift in a Pure Cruciform for Energy Harvesting}}}\\
+
+We would like to express our gratitude to the anonymous reviewers for their time and insight. Below, we document the comments from the reviewers and our response to the comments. We indicate the changes in the original manuscript using the colour \textcolor{blue}{blue}.
+
+\vspace{1cm}
+
+% \newperson{Associate Editor}{AE}
+% 
+% \question{Question}
+% 
+% \answer{Answer}
+% >>>
+% Reviewer 1 <<<
+\newperson{Reviewer 1}{R1}
+
+\question{Why OpenFOAM is employed? If other software can be employed to solve the calculation?}
+
+\answer{OpenFOAM is an open source software capable of doing a lot of CFD related tasks. The obvious merit is the}
+
+\question{Mesh independence test is carried out using GCI method, but I think the reference can be updated. For example:[Applied Thermal Engineering. 2020;171:115090], [https://doi.org/10.1016/j.energy.2020.118690].}
+
+\answer{In \citet{Koide2017},}
+
+\question{Some figures' resolution need to be adjusted.}
+
+\answer{In \citet{Koide2017},}
+
+\question{Boundary conditions need to be shown.}
+
+\answer{In \citet{Koide2017},}
+% >>>
+% Reviewer 2 <<<
+\newperson{Reviewer 2}{R2}
+
+\question{It's suggested to define FIM in line 37 of page 3 (sub-section 2.1), even though it's easy to know that FIM means flow-induced motion.}
+
+\answer{Answer}
+
+\question{Why chose the distance of $7.5D$ from front/back boundary to centre of cylinder (Fig 2)? And how did the boundary condition set in this study?}
+
+\answer{Answer}
+
+\question{It's suggested to presented or validated the time step (or nondimensionalised time step) of the simulation in this work.}
+
+\answer{what is gi}
+
+\question{In line 30 of page 15, why the sudden jump followed by a gradual drop and a gradual rise in $\yrms$ can be observed in this study but not in woks of\citet{Nguyen2012} nor \citet{Koide2013}? Any difference of parameters leads to the different results?}
+
+\answer{Answer}
+
+\question{The CFD over predict the frequency response and the value of St in low reduced velocity range (Fig 10), is this caused by the boundary condition or the size of computational domain?}
+
+\answer{Answer}
+
+\question{It's interested that the fluctuation exists in Fig 11(a) when $\ured = \urte$, how this exist and how the value of $\yrms$ and $\fstr$ calculated for this case (The values can be found in Fig 10)?}
+
+\answer{Answer}
+
+\question{Looks like that the values still going to decline in Fig 12(a). It means that the vibration here still doesn't stable?}
+
+\answer{Answer}
+
+\question{How it's possible that $\pfrms < \pmrms$ for a given reduced velocity (Fig 20)?}
+
+\answer{Answer}
+
+\question{The fluid power is possible to improve by redirect the energy from the Karman to the streamwise vortex, and how it realizes? It's suggested to clarify a possible measure for it, or try to put forward an example.}
+
+\answer{Answer}
+% \newperson{Reviewer 3}{R3}
+% 
+% \question{Question}
+% 
+% \answer{Answer}
+% >>>
+
+\bibliographystyle{cas-model2-names}
+\bibliography{references}
+
+\end{document}
