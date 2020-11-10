@@ -125,19 +125,36 @@ We would like to express our gratitude to the anonymous reviewers for their time
 
 \question{Why OpenFOAM is employed? If other software can be employed to solve the calculation?}
 
-\answer{OpenFOAM is an open source software capable of doing a lot of CFD related tasks. The obvious merit is the}
+\answer{
+    In our opinion, any CFD software can be employed by a proficient enough user as a means to gain important numerical insight upon a fluid mechanics project. A fluid mechanics project can be of different scales: some are targeted at an individual level, dealing with relatively idealised environments as is the case in an undergraduate class on computational fluid dynamics. However, as soon as the project is commissioned at a more advanced level, e.g. post-graduate or industrial setting, we think that the tool chosen to execute the CFD must fulfill the following criteria.
+
+    \begin{enumerate}
+        \item The algorithm required to carry out the numerical work must be built into the software. Else, the software itself must be easily extensible to include the numerical routine required. \label{enum:extensible}
+        \item A high degree of automation must be possible on any aspect of the numerical work, be it meshing, running and control of the simulation, data collection and parameter variation. \label{enum:automation}
+        \item Parallellisation is built in to the software. \label{enum:parallellisation}
+        \item A stable software code base. \label{enum:stability}
+        \item The software allows real-time collaboration with multiple authors across a common platform, allowing each iteration of the project or parts of it to be version controlled. \label{enum:collaboration}
+        \item Cost-effective. \label{enum:cost}
+    \end{enumerate}
+
+    OpenFOAM, which at the most fundamental level is a collection of C++ library, is easily modified and extended (point \ref{enum:extensible}) using nothing more than a plain text editor, and then recompiled to include the required functionality. The use of extensible text editors such as VIM or Emacs greatly facilitates this process, and at zero cost.
+
+    Any aspect of the workflow using OpenFOAM can be automated (point \ref{enum:automation}) through the use of PyFOAM, a Python library that allows fine-grain control of virtually every aspect of the simulation. In addition to automating the grid independency study and parameter variation, PyFOAM can also be used to post-process data by exploiting the NumPy Python library. Furthermore, parallellisation is built into the OpenFOAM code (point \ref{enum:parallellisation}), and the fact that the code is open source, facilitates the discovery and patching of bugs (point \ref{enum:stability}).
+
+    Usage of the OpenFOAM software involves including and modifying configuration files, written as plain text files. As such, one can easily leverage the pre-existing tools used by software engineers such as Git, enabling real-time collaboration (point \ref{enum:collaboration}) between project members and provide much-needed version control of the whole project. We would like to point out all the tools mentioned in the previous discussion are available for free, incurring zero extra cost on the team, which can be beneficial especially for new and emerging laboratories, where procurement of hardwares is of higher priority.
+}
 
 \question{Mesh independence test is carried out using GCI method, but I think the reference can be updated. For example:[Applied Thermal Engineering. 2020;171:115090], [https://doi.org/10.1016/j.energy.2020.118690].}
 
-\answer{In \citet{Koide2017},}
+\answer{We included a more recent example of the GCI study in the revised manuscript at ... following the suggestion of the reviewer.}
 
 \question{Some figures' resolution need to be adjusted.}
 
-\answer{In \citet{Koide2017},}
+\answer{We exported the figures used in the revised manuscript into the PDF instead of the PNG format used in the previous version of the manuscript for better resolution as per the suggestion of the reviewer.}
 
 \question{Boundary conditions need to be shown.}
 
-\answer{In \citet{Koide2017},}
+\answer{We included the boundary conditions in a table in the revised manuscript.}
 % >>>
 % Reviewer 2 <<<
 \newperson{Reviewer 2}{R2}
