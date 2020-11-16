@@ -16,11 +16,13 @@
 \renewcommand{\thefigure}{R\arabic{figure}}
 \renewcommand{\thetable}{R\arabic{table}}
 
-\newcommand{\question}[1]{\stepcounter{question} \noindent \textbf{Comment \name.\thequestion} \emph{#1}\\}
+\newcommand{\question}[1]{\refstepcounter{question} \noindent \textbf{Comment \name.\thequestion}\vskip 0.25cm \noindent \emph{#1}\\}
 
-\newcommand{\answer}[1]{\noindent \textbf{Answer to \name.\thequestion} #1 \mbox{}\\}
+\newcommand{\answer}[1]{\noindent \textbf{Answer to \name.\thequestion}\vskip 0.25cm \noindent #1 \mbox{}\\}
 
 \newcommand{\newperson}[2]{\renewcommand{\name}{#2} \setcounter{question}{0} \noindent \textbf{\large Answers to #1} \\}
+
+\onehalfspacing
 
 \begin{document}
 
@@ -53,6 +55,11 @@
 \newcommand{\cclys}{C_{\text{Cl},\ystr}} %the characteristic IMF representing the lift coefficient
 \newcommand{\afl}{\alpha_{F_{L}}} %ratio between two dominant IMF components of the lift
 
+% Turbulence modelling related symbols
+\newcommand{\nut}{\nu_{T}} %nut
+\newcommand{\nuTilda}{\tilde{\nu}} %nuTilda
+
+% Common angles
 \newcommand{\angfi}{\SI{90}{\degree}} %90 deg. angle
 \newcommand{\angfo}{\SI{67.5}{\degree}} %67.5 deg. angle
 \newcommand{\angth}{\SI{45}{\degree}} %45 deg. angle
@@ -110,7 +117,7 @@
 % Opening remarks <<<
 \noindent {\Large \textbf{Response to the reviewers for paper OE-D20-01516: \emph{Evolution of Lift in a Pure Cruciform for Energy Harvesting}}}\\
 
-We would like to express our gratitude to the anonymous reviewers for their time and insight. Below, we document the comments from the reviewers and our response to the comments. We indicate the changes in the original manuscript using the colour \textcolor{blue}{blue}.
+\noindent We would like to express our gratitude to the anonymous reviewers for their time and insight. Below, we document the comments from the reviewers and our response to the comments. We indicate the changes in the original manuscript using the colour \textcolor{blue}{blue}.
 
 \vspace{1cm}
 
@@ -123,7 +130,7 @@ We would like to express our gratitude to the anonymous reviewers for their time
 % Reviewer 1 <<<
 \newperson{Reviewer 1}{R1}
 
-\question{Why OpenFOAM is employed? If other software can be employed to solve the calculation?}
+\question{Why OpenFOAM is employed? If other software can be employed to solve the calculation?} \label{quest:whyOF}
 
 \answer{
     In our opinion, any CFD software can be employed by a proficient enough user as a means to gain important numerical insight upon a fluid mechanics project. A fluid mechanics project can be of different scales: some are targeted at an individual level, dealing with relatively idealised environments as is the case in an undergraduate class on computational fluid dynamics. However, as soon as the project is commissioned at a more advanced level, e.g. post-graduate or industrial setting, we think that the tool chosen to execute the CFD must fulfill the following criteria.
@@ -144,46 +151,192 @@ We would like to express our gratitude to the anonymous reviewers for their time
     Usage of the OpenFOAM software involves including and modifying configuration files, written as plain text files. As such, one can easily leverage the pre-existing tools used by software engineers such as Git, enabling real-time collaboration (point \ref{enum:collaboration}) between project members and provide much-needed version control of the whole project. We would like to point out all the tools mentioned in the previous discussion are available for free, incurring zero extra cost on the team, which can be beneficial especially for new and emerging laboratories, where procurement of hardwares is of higher priority.
 }
 
-\question{Mesh independence test is carried out using GCI method, but I think the reference can be updated. For example:[Applied Thermal Engineering. 2020;171:115090], [https://doi.org/10.1016/j.energy.2020.118690].}
+\question{
+    Mesh independence test is carried out using GCI method, but I think the reference can be updated. For example:[Applied Thermal Engineering. 2020;171:115090], [https://doi.org/10.1016/j.energy.
+    2020.118690].
+}
 
-\answer{We included a more recent example of the GCI study in the revised manuscript at ... following the suggestion of the reviewer.}
+\answer{
+  Following the suggestion from the reviewer, we added the following sentence in the revised manuscript.
+
+  \begin{quotation}
+    \color{blue}
+    \noindent A common method for checking the grid independency of quantities of interest in a numerical study is by demonstrating that one obtained similar results on all variants of the spatial discretisation (usually three grids), and then proceeding with the numerical study using the medium variant on the computational domain (see e.g., \citet{Ding2013}, \citet{Ding2019}, or \citet{Wang2020}, who settled on the coarse variant of their spatial discretisation).
+    \color{black}
+  \end{quotation}
+}
 
 \question{Some figures' resolution need to be adjusted.}
 
-\answer{We exported the figures used in the revised manuscript into the PDF instead of the PNG format used in the previous version of the manuscript for better resolution as per the suggestion of the reviewer.}
+\answer{
+We re-exported the figures used in the revised manuscript directly into the PDF format instead of the PNG format used previously, for better resolution as per the suggestion of the reviewer.
+}
 
-\question{Boundary conditions need to be shown.}
+\question{Boundary conditions need to be shown.} \label{q:boundConds}
 
-\answer{We included the boundary conditions in a table in the revised manuscript.}
+\answer{
+  In the revised manuscript, we included the boundary conditions in Table 1, and added the description of Table 1 as follows.
+
+  \begin{quotation}
+    \color{blue}
+    \noindent Table 1 summarises the boundary conditions imposed on each of the boundary patches in the simulation domain (see Fig. 6). The symbols $U$, $p$, $\nut$, and $\nuTilda$ refer to the flow velocity, pressure, kinetic eddy viscosity and its mediating variable, respectively. At the inlet, the \texttt{fixedValue} for $U$ is the freestream velocity $U_{\infty}$ (\si[per-mode=symbol]{\metre\per\second}), while $U = \SI[per-mode=symbol]{0}{\metre\per\second}$ at the strip plate. The \texttt{fixedValue} for $p$ at the outlet is \SI[per-mode=symbol]{0}{\square\metre\per\square\second}, and the \texttt{fixedValue} for $\nuTilda$ is \SI[per-mode=symbol]{0}{\square\metre\per\second} at the cylinder and strip plate patches.
+  \end{quotation}
+
+  \color{black}
+}
 % >>>
 % Reviewer 2 <<<
+\newpage
 \newperson{Reviewer 2}{R2}
 
 \question{It's suggested to define FIM in line 37 of page 3 (sub-section 2.1), even though it's easy to know that FIM means flow-induced motion.}
 
-\answer{Answer}
+\answer{We have added the definition of FIM, which is flow-induced motion, in the revised manuscript following the suggestion by the reviewer.}
 
 \question{Why chose the distance of $7.5D$ from front/back boundary to centre of cylinder (Fig 2)? And how did the boundary condition set in this study?}
 
-\answer{Answer}
+\answer{
+  We considered a few factors in determining the spanwise dimension of the simulation domain, and they fall in one of the following two categories. First, adherence to the physical manifestation of streamwise vortex shedding, as observed in experimental studies. Under this category, we note the minimum spanwise half-length of a system that required for the expression of streamwise vortex-induced vibration (SVIV) is between $2D$ to $3.2D$ (e.g., \citet{Shirakashi2001} and \citet{Koide2006}). Taking this into consideration, we doubled the length of the latter, obtaining $3.2D \times 2 = 6.4D$, and then applying a safety factor of approximately 1.2, or exactly 1.17875, arriving at a round number of $15D$ for the total spanwise length of the simulation domain, and $15D/2 = 7.5D$ as its half-length.
+
+  The second category involves evaluating the actual implementation of spanwise lengths in similar numerical studies of SVIV. Numerical studies of SVIV, or simply the numerical study of streamwise vortex shedding from a cruciform stucture are relatively few and far between. This is probably due to the irreducibility of the SVIV phenomenon to a two-dimensional (2D) problem, thus rendering it more computationally demanding than the numerical study of Karman vortices shedding and by extension, Karman vortex-induced vibration (KVIV). Here, we shall discuss the spanwise lengths implemented in the handful of numerical work on SVIV and how they influece our choice of spanwise length in the manuscript.
+
+  The earliest numerical work on SVIV from a cruciform system that we know of is the study by \citet{Deng2007}. In the paper, the authors used a spanwise length of $12D$ and identified different vibration responses of the cruciform according to the spacing of the upstream and downstream cylinders. Fast forward about a decade and we find the study by \citet{Hemsuwan2018a}, which has an equivalent spanwise length of $13D$, in \citet{Hemsuwan2018b} with an equivalent spanwise length of $14.5D$ and in \citet{Hemsuwan2018c} with an equivalent length of $16D$. All of the studies mentioned deal with cruciform systems that elicit motion of the upstream cylinder resulting from the shedding of streamwise vortices. As such, it became apparent to us that our choice of domain spanwise length, $15D$, is well within the trend found in comparable literature, which lies between $12D$ and $16D$, providing further basis to our decision.
+
+  There is one case \citep{Zhao2018a} in which the authors implemented a spanwise length of $42D$ in their computational domain. This particular study, however, is limited to a fixed cruciform in which both of the cylinders forming the cruciform are fixed. In our opinion, by limiting their scope to a fixed cruciform, the authors of \citet{Zhao2018a} significantly eased their computational requirements - permitting them to implement a larger spanwise dimension compared to us, or the other studies we have discussed.
+
+  As for the boundary conditions, we refer the reviewer to our reply to comment \ref{q:boundConds} of reviewer 1.
+}
 
 \question{It's suggested to presented or validated the time step (or nondimensionalised time step) of the simulation in this work.}
 
-\answer{what is gi}
+\answer{
+In this work, we used the Courant–Friedrichs–Lewy (CFL) number as the basis for our choice of time step implemented in the simulation. The CFL number is of course defined as
 
-\question{In line 30 of page 15, why the sudden jump followed by a gradual drop and a gradual rise in $\yrms$ can be observed in this study but not in woks of\citet{Nguyen2012} nor \citet{Koide2013}? Any difference of parameters leads to the different results?}
+\begin{equation}
+  C = \frac{U \Delta t}{\Delta x},
+  \label{eq:cflNo}
+\end{equation}
 
-\answer{Answer}
+\noindent where $C$ is the CFL number, $U$ the flow velocity, $\Delta t$ the time step and $\Delta x$ the length a cell in the discretised domain, respectively. The time step $\Delta t$ is chosen such that the condition $C < 1$ is always satisfied everywhere in the computational domain. Following the suggestion by the reviewer, we have added the following sentences in the revised manuscript.
+
+\begin{quotation}
+  \color{blue}
+  \noindent As for the temporal discretisation, we relied on a simple CFL number-based scheme \citep{Hemsuwan2018a,Hemsuwan2018b,Hemsuwan2018c}, in which the time step is chosen such the maximum CFL number $C$ in the computational domain is always less than unity. The CFL number $C$, is defined in Eq. \ref{eq:cflNoMan} as
+
+  \begin{equation}
+    C = \frac{U \Delta t}{\Delta x},
+    \tag{21} \label{eq:cflNoMan}
+  \end{equation}
+
+  \noindent where $U$, $\Delta t$ and $\Delta x$ represents the flow velocity, time step and characteristic length of cell, respectively.
+  \color{black}
+\end{quotation}
+
+}
+
+\question{In line 30 of page 15, why the sudden jump followed by a gradual drop and a gradual rise in $\yrms$ can be observed in this study but not in woks of \citet{Nguyen2012} nor \citet{Koide2013}? Any difference of parameters leads to the different results?} \label{qrevtw:jumpDrop}
+
+\answer{
+  A review of the literature on streamwise vortex shedding, with a particular focus on discussions about the degree of generated disturbance in the flow, or the level of flow turbulence, reveals three important takeaways.
+
+  \begin{enumerate}
+    \item The onset of streamwise vortex shedding brings with it an increased level of turbulence in the flow. This increases the uncertainty in the measurement of the \rms{} value of normalised vibration amplitude $\yrms$ \citep{Shirakashi1989,Zhao2018a}.
+    \item The level of turbulence generated  in the flow following the onset of streamwise vortex shedding is higher when the cruciform is comprised of an upstream circular cylinder and downstream strip plate, in contrast to a cruciform made of two circular cylinders. This is evidenced by the broader distribution of cruciform downstream velocity fluctuation frequencies in the frequency domain \citep{Kato2006,Kato2012}, and also flow visualisations \citep{Kato2012,Koide2017}.
+    \item In a cruciform system whose constituents are an upstream circular cylinder and a downstream strip plate, systems whose plate width to cylinder diameter ratio is equal to unity, $W = w/D = 1$, generates a higher level of turbulence compared to cruciforms with $W < 1$ \citep{Kato2012}.
+  \end{enumerate}
+
+  The turbulence intensity in our simulations is set to 5\%, to recreate the ambient flow conditions our experimental setup is exposed to. This level of 5\% is comparatively high, considering that the studies we used to benchmark our results operate in water tunnels with a turbulence level that is at 2.8\% maximum \citep{Nguyen2012,Koide2013}. Add this to the fact that we are using a 
+
+  \begin{enumerate}
+    \item circular cylinder-strip plate cruciform, and,
+    \item the $W = w/D$ for our strip plate is $W = 1$,
+  \end{enumerate}
+
+  \noindent the level of turbulence in the flow, and the level of disturbance/noise resulting from it becomes an increasingly important factor in determining the evolution of the dominant flow structures, and the resulting cylinder amplitude response. The jump-drop-rise pattern observed in the amplitude responses of both our experimental and numerical work is, in our opinion, the result of an interplay between the level of disturbance/noise due to increasingly turbulent flow conditions and the ability of the streamwise vortex to withstand said disturbance. As we have alluded to in the manuscript,
+
+  \begin{quotation}
+    \hspace*{-1.3cm} {\Large \textbf{``}} We, therefore, attribute this difference to the higher turbulence level set in our work. The turbulence level in the works of \citet{Nguyen2012}, for example, was  $<2.8\%$ throughout their range of Reynolds number. Instead, the initial turbulence level in our setup, both experimental and numerical, is approximately double that value. Because of this, the turbulence amplification due to the onset of streamwise vortices  \citep{Zhao2018a} - especially for a circular cylinder-strip plate cruciform \citep{Koide2017} - is also higher compared to the experiments of \citet{Nguyen2012} and \citet{Koide2013}. This higher compound turbulence warps the dominant vortical structure and introduces an increasing amount of intermittency to the lift signal, and by extension, to the displacement time history of the cylinder. {\Large \textbf{''}}
+   \end{quotation}
+
+   \noindent In our opinion, the interplay between the level of disturbance in the flow and the streamwise vortices goes as follows.
+
+   \begin{itemize}
+     \item \textbf{\textit{Sudden jump:}} At the onset of SVIV, the level of disturbance is still relatively small as the system has just barely entered the streamwise vortex shedding regime. This occurs at $\ured = \urei$, where the vortical structures are the least deformed, and because of that, the net lift driving the vibration is higher compared to when the level of flow disturbance starts to grow.
+     \item \textbf{\textit{Gradual drop:}} As we increase $\ured$, the level of disturbance in the flow brought about by the rising turbulence increasingly warps the streamwise vortical structures, imparting a growing degree of intermittency on the lift and hence cylinder displacement signal ($\urni \leq \ured \leq \urte$). An increased intermittency in the cylinder displacement signal lowers its mean amplitude, which in this work is computed as $\yrms$.
+     \item \textbf{\textit{Gradual rise:}} As we advance further into the SVIV regime ($\ured > \urte$), the streamwise vortices becomes even more energised and increasingly resilient to ambient disturbance. This results in a less intermittent lift, the effect of which is imparted on the cylinder displacement signal, shown in Fig. 11(b) of the revised manuscript.
+   \end{itemize}
+
+   \noindent We acknowledge a lack of explanation on this matter in the original manuscript, and have therefore included the following sentences in the revised manuscript.
+
+   \begin{quotation}
+     \color{blue}
+     \noindent An intermittent lift signal imposes the same trend on the $\ystr(t)$ signal, reducing its overall mean amplitude, which we compute in this work as $\yrms$.
+     \color{black}
+   \end{quotation}
+
+   \noindent and,
+   
+   \begin{quotation}
+     \color{blue}
+     \noindent We interpret this as the vortical structures becoming more energised and resilient against ambient excitation the further we advance into the SVIV regime.
+     \color{black}
+   \end{quotation}
+}
 
 \question{The CFD over predict the frequency response and the value of St in low reduced velocity range (Fig 10), is this caused by the boundary condition or the size of computational domain?}
 
-\answer{Answer}
+\answer{
+  In the original manuscript, we explained the discrepancy highlighted by the reviewer as follows.
+
+  \begin{quotation}
+    \hspace*{-1.3cm} {\Large \textbf{``}} The discrepancies found especially in Fig. 10b most probably stem from the same reasons explained by \citet{Nguyen2012}. The lowest  $\yrms$ recorded in our simulation within  $\urth \leq \ured \leq \ursi$ was in the order of $10^{-5}$ \si{\metre} (10 microns). A numerical study has no problem recording vibration of this order as the precision of the numerical solution is only limited by the processor architecture. Experimental work, however, requires not only the sensitivity but also the isolation from the background noise that forces the cylinder to vibrate close to the natural frequency of the system  $\fn$ \citep{Nguyen2012}, which consequently overpowers this minimal amplitude vibration. Once streamwise vortices form, however, their shedding and cylinder vibration synchronises close to $\fn$, thus locking the normalised vibration frequency back to  $\fstr \approx 1$. {\Large \textbf{''}}
+  \end{quotation}
+
+  Recall that the frequency overshoot occurs at within a range of $\ured$ where the vibration amplitude of the cylinder is especially small. In fact, this region of especially small vibration amplitude - in the order of 10 microns in our simulation - has been reported by \citet{Nguyen2012} and \citet{Nguyen2010} as the region where selective resonance takes place (see, e.g., \S4.3 of \citet{Nguyen2010} and \S4.3 of \citet{Nguyen2012}). When said selective resonance takes place, the randomly appearing external excitation causes the frequency spectra of the cylinder displacement to register a frequency close to the natural frequency of the system $\fn$ - in other words, $\fstr \approx 1$ - as the dominant frequency, overpowering the actual frequency at which the cylinder vibrates. In our humble understanding of their work, \citet{Nguyen2010} and \citet{Nguyen2012} simply excluded the data points that results from the selective resonance - all of which are close to $\fn$ - from their frequency response plot. We provide the original quote from \S4.3 of \citet{Nguyen2012} below.
+
+  \begin{quotation}
+    \hspace*{-1.3cm} {\Large \textbf{``}} It is noted that when the oscillation amplitude is small in air flow, the spectrum of displacement, $S_{z}$, has a peak at $\fn$, in addition to $f_{v}$, due to the selective resonance which commonly occurs for a low-damped system exerted by alternating force having broadly distributing spectrum as shown in Fig. 4. In Fig. 7, and in the following figures in this paper, such data for $f_{z}$ are not plotted. {\Large \textbf{''}}
+  \end{quotation}
+
+  We decided to adopt a different approach and reported our experimental results as-is, including those affected by the selective resonance. This is why our experimental measurement of $\fstr$ returns a value close to 1 within $\urth \leq \ured \leq \ursi$. However, numerical studies are immune from the random external excitations that experimental investigations are subject to, unless they are explicitly defined in the numerical setup. Therefore, the overshot values of $\fstr$ are in our humble opinion the limit to which $\fstr$ will approach as random, external perturbations on the flow approaches zero.
+
+  Acknowledging the inadequacy of our explanation in the original manuscript, we added the following sentence in the revised version.
+
+  \begin{quotation}
+    \color{blue}
+    \noindent The values of $\fstr$ between $\urth \leq \ured \leq \ursi$ can therefore be considered as the limit $\fstr$ in that region, which is appoached as the random background forcing present in experimental works tend to zero.
+    \color{black}
+  \end{quotation}
+
+}
 
 \question{It's interested that the fluctuation exists in Fig 11(a) when $\ured = \urte$, how this exist and how the value of $\yrms$ and $\fstr$ calculated for this case (The values can be found in Fig 10)?}
 
-\answer{Answer}
+\answer{
+  \hspace*{-0.3cm} The fluctuations that exist at $\ured = \urte$ are the direct result of the vortex structure - turbulence level interplay mechanism explained in the answer for question \ref{qrevtw:jumpDrop}.
+
+  We compute the \rms{} value of a given quantity using the formula in Eq. \ref{eq:rmsDiscretised}.
+
+  \begin{equation}
+    \yrms = \frac{1}{N} \sqrt{\sum_{i = 1}^{i = N} \left( \ystr_{i} \right) ^{2}}.
+    \label{eq:rmsDiscretised}
+  \end{equation}
+
+  \noindent Here, $N$ is the total number of data points, and $\ystr$, the normalised cylinder displacement value. Equation \ref{eq:rmsDiscretised} is used to compute the values of $\yrms$ at all $\ured$, including at $\ured = \urte$.
+
+  We compute the values for $\fstr$ by performing the ensemble empirical mode decomposition (EEMD) on the normalised cylinder displacement signal $\ystr$. Then, we take the component with the largest \rms{} amplitude and compute its Hilbert transform, giving us the instantaneous frequency, a quantity that is a function of time. Finally, we compute the mean of that instantaneous frequency signal, giving us the characteristic frequency of $\ystr$, designated as $f$. Normalising $f$ with $\fn$ gives us $\fstr$. The values of $\fstr$ at all $\ured$ are computed using this method, including that at $\ured = \urte$. The values of $\fstr$ can also be computed via fast Fourier transform (FFT), which yields similar results.
+
+  The reason we opted for the method above to compute $\fstr$ is because we are able to obtain the instantaneous frequency signal of $\ystr$ during the process of computing phase lag between $\ystr$ and $\fstr$, which greatly steamlines our simulation post-processing, instead of running the results separately through FFT for the sole purpose of estimating $\fstr$. To highlight this point, we included the following sentence in our revised manuscript.
+  
+  \begin{quotation}
+    \color{blue}
+    \noindent Here, $\fstr$ is computed as the mean instantaneous frequency of the dominant component of $\ystr$, which we obtain in the course of calculating the phase lag between $\ystr$ and lift. The procedure employed to decompose the $\ystr$ signal and obtain the instantaneous frequency is elaborated in \S5.1.
+    \color{black}
+  \end{quotation}
+}
 
 \question{Looks like that the values still going to decline in Fig 12(a). It means that the vibration here still doesn't stable?}
+
 
 \answer{Answer}
 

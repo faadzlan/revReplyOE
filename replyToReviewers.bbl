@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{17}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -12,6 +12,110 @@
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
 %Type = Article
+\bibitem[{Deng et~al.(2007)Deng, Ren and Shao}]{Deng2007}
+\bibinfo{author}{Deng, J.}, \bibinfo{author}{Ren, A.L.}, \bibinfo{author}{Shao,
+  X.M.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{{The flow between a stationary cylinder and a
+  downstream elastic cylinder in cruciform arrangement}}.
+\newblock \bibinfo{journal}{Journal of Fluids and Structures}
+  \bibinfo{volume}{23}, \bibinfo{pages}{715--731}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0889974606001472},
+  \DOIprefix\doi{10.1016/J.JFLUIDSTRUCTS.2006.11.005}.
+%Type = Article
+\bibitem[{Ding et~al.(2013)Ding, Bernitsas and Kim}]{Ding2013}
+\bibinfo{author}{Ding, L.}, \bibinfo{author}{Bernitsas, M.M.},
+  \bibinfo{author}{Kim, E.S.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{{2-D URANS vs. experiments of flow induced motions of
+  two circular cylinders in tandem with passive turbulence control for
+  30,000}}.
+\newblock \bibinfo{journal}{Ocean Engineering} \bibinfo{volume}{72},
+  \bibinfo{pages}{429--440}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0029801813002448?via{\%}3Dihub},
+  \DOIprefix\doi{10.1016/J.OCEANENG.2013.06.005}.
+%Type = Article
+\bibitem[{Ding et~al.(2019)Ding, Sun, Xu and Bernitsas}]{Ding2019}
+\bibinfo{author}{Ding, W.}, \bibinfo{author}{Sun, H.}, \bibinfo{author}{Xu,
+  W.}, \bibinfo{author}{Bernitsas, M.M.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{{Numerical investigation on interactive FIO of
+  two-tandem cylinders for hydrokinetic energy harnessing}}.
+\newblock \bibinfo{journal}{Ocean Engineering} \bibinfo{volume}{187},
+  \bibinfo{pages}{106215}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0029801819304019},
+  \DOIprefix\doi{10.1016/J.OCEANENG.2019.106215}.
+%Type = Article
+\bibitem[{Hemsuwan et~al.(2018a)Hemsuwan, Sakamoto, Nakada and
+  Takahashi}]{Hemsuwan2018a}
+\bibinfo{author}{Hemsuwan, W.}, \bibinfo{author}{Sakamoto, K.},
+  \bibinfo{author}{Nakada, S.}, \bibinfo{author}{Takahashi, T.},
+  \bibinfo{year}{2018}a.
+\newblock \bibinfo{title}{{A longitudinal vortex wind turbine: Numerical
+  study}}.
+\newblock \bibinfo{journal}{Journal of Wind Engineering and Industrial
+  Aerodynamics} \bibinfo{volume}{180}, \bibinfo{pages}{213--230}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0167610518301612},
+  \DOIprefix\doi{10.1016/J.JWEIA.2018.07.022}.
+%Type = Article
+\bibitem[{Hemsuwan et~al.(2018b)Hemsuwan, Sakamoto, Nakada and
+  Takahashi}]{Hemsuwan2018c}
+\bibinfo{author}{Hemsuwan, W.}, \bibinfo{author}{Sakamoto, K.},
+  \bibinfo{author}{Nakada, S.}, \bibinfo{author}{Takahashi, T.},
+  \bibinfo{year}{2018}b.
+\newblock \bibinfo{title}{{A longitudinal vortex wind turbine: Numerical
+  study}}.
+\newblock \bibinfo{journal}{Journal of Wind Engineering and Industrial
+  Aerodynamics} \bibinfo{volume}{180}, \bibinfo{pages}{213--230}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0167610518301612},
+  \DOIprefix\doi{10.1016/J.JWEIA.2018.07.022}.
+%Type = Article
+\bibitem[{Hemsuwan et~al.(2018c)Hemsuwan, Sakamoto and
+  Takahashi}]{Hemsuwan2018b}
+\bibinfo{author}{Hemsuwan, W.}, \bibinfo{author}{Sakamoto, K.},
+  \bibinfo{author}{Takahashi, T.}, \bibinfo{year}{2018}c.
+\newblock \bibinfo{title}{{Numerical investigation of lift-force generation on
+  a moving circular cylinder in a uniform flow driven by longitudinal vortex}}.
+\newblock \bibinfo{journal}{Journal of Fluids and Structures}
+  \bibinfo{volume}{83}, \bibinfo{pages}{448--470}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0889974617308885},
+  \DOIprefix\doi{10.1016/J.JFLUIDSTRUCTS.2018.09.010}.
+%Type = Article
+\bibitem[{Kato et~al.(2006)Kato, Koide, Takahashi and Shirakashi}]{Kato2006}
+\bibinfo{author}{Kato, N.}, \bibinfo{author}{Koide, M.},
+  \bibinfo{author}{Takahashi, T.}, \bibinfo{author}{Shirakashi, M.},
+  \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{{Influence of Cross-Sectional Configuration on the
+  Longitudinal Vortex Excitation of the Upstream Cylinder in Cruciform
+  Two-Cylinder System}}.
+\newblock \bibinfo{journal}{Journal of Fluid Science and Technology}
+  \bibinfo{volume}{1}, \bibinfo{pages}{126--137}.
+\newblock \URLprefix
+  \url{http://joi.jlc.jst.go.jp/JST.JSTAGE/jfst/1.126?from=CrossRef},
+  \DOIprefix\doi{10.1299/jfst.1.126}.
+%Type = Article
+\bibitem[{Kato et~al.(2012)Kato, Koide, Takahashi and Shirakashi}]{Kato2012}
+\bibinfo{author}{Kato, N.}, \bibinfo{author}{Koide, M.},
+  \bibinfo{author}{Takahashi, T.}, \bibinfo{author}{Shirakashi, M.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{{VIVs of a circular cylinder with a downstream
+  strip-plate in cruciform arrangement}}.
+\newblock \bibinfo{journal}{Journal of Fluids and Structures}
+  \bibinfo{volume}{30}, \bibinfo{pages}{97--114}.
+%Type = Article
+\bibitem[{Koide et~al.(2006)Koide, Ootani, Yamada, Takahashi and
+  Shirakashi}]{Koide2006}
+\bibinfo{author}{Koide, M.}, \bibinfo{author}{Ootani, K.},
+  \bibinfo{author}{Yamada, S.}, \bibinfo{author}{Takahashi, T.},
+  \bibinfo{author}{Shirakashi, M.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{{Vortex Excitation Caused by Longitudinal Vortices
+  Shedding from Cruciform Cylinder System in Water Flow}}.
+\newblock \bibinfo{journal}{JSME International Journal} \bibinfo{volume}{49},
+  \bibinfo{pages}{1043--1048}.
+%Type = Article
 \bibitem[{Koide et~al.(2013)Koide, Sekizaki, Yamada, Takahashi and
   Shirakashi}]{Koide2013}
 \bibinfo{author}{Koide, M.}, \bibinfo{author}{Sekizaki, T.},
@@ -24,6 +128,24 @@
   \bibinfo{volume}{8}, \bibinfo{pages}{294--308}.
 \newblock \DOIprefix\doi{10.1299/jfst.8.294}.
 %Type = Article
+\bibitem[{Koide et~al.(2017)Koide, Takahashi, Shirakashi and Salim}]{Koide2017}
+\bibinfo{author}{Koide, M.}, \bibinfo{author}{Takahashi, T.},
+  \bibinfo{author}{Shirakashi, M.}, \bibinfo{author}{Salim, S.A.Z.B.S.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{Three-dimensional structure of longitudinal vortices
+  shedding from cruciform two-cylinder systems with different geometries}}.
+\newblock \bibinfo{journal}{Journal of Visualization} , \bibinfo{pages}{1--11}.
+%Type = Article
+\bibitem[{Nguyen et~al.(2010)Nguyen, Koide, Takahashi and
+  Shirakashi}]{Nguyen2010}
+\bibinfo{author}{Nguyen, T.}, \bibinfo{author}{Koide, M.},
+  \bibinfo{author}{Takahashi, T.}, \bibinfo{author}{Shirakashi, M.},
+  \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{{Universality of longitudinal vortices shedding from
+  a cruciform two circular cylinder system in uniform flow}}.
+\newblock \bibinfo{journal}{Journal of Fluid Science and Technology}
+  \bibinfo{volume}{5}, \bibinfo{pages}{603--616}.
+%Type = Article
 \bibitem[{Nguyen et~al.(2012)Nguyen, Koide, Yamada, Takahashi and
   Shirakashi}]{Nguyen2012}
 \bibinfo{author}{Nguyen, T.}, \bibinfo{author}{Koide, M.},
@@ -34,5 +156,45 @@
 \newblock \bibinfo{journal}{Journal of Fluids and Structures}
   \bibinfo{volume}{28}, \bibinfo{pages}{40--55}.
 \newblock \DOIprefix\doi{10.1016/j.jfluidstructs.2011.10.006}.
+%Type = Article
+\bibitem[{Shirakashi et~al.(1989)Shirakashi, Mizuguchi and
+  Bae}]{Shirakashi1989}
+\bibinfo{author}{Shirakashi, M.}, \bibinfo{author}{Mizuguchi, K.},
+  \bibinfo{author}{Bae, H.M.}, \bibinfo{year}{1989}.
+\newblock \bibinfo{title}{{Flow-induced excitation of an elastically-supported
+  cylinder caused by another located downstream in cruciform arrangement}}.
+\newblock \bibinfo{journal}{Journal of Fluids and Structures}
+  \bibinfo{volume}{3}, \bibinfo{pages}{595--607}.
+\newblock \DOIprefix\doi{10.1016/S0889-9746(89)90150-3}.
+%Type = Article
+\bibitem[{Shirakashi et~al.(2001)Shirakashi, Takahashi, Kumagai and
+  Matsumoto}]{Shirakashi2001}
+\bibinfo{author}{Shirakashi, M.}, \bibinfo{author}{Takahashi, T.},
+  \bibinfo{author}{Kumagai, I.}, \bibinfo{author}{Matsumoto, T.},
+  \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{{Vortex-induced vibration of the upstream cylinder of
+  a two-cylinder system in cruciform arrangement}}.
+\newblock \bibinfo{journal}{JCAM} \bibinfo{volume}{2},
+  \bibinfo{pages}{103--122}.
+%Type = Article
+\bibitem[{Wang et~al.(2020)Wang, Zhao, Su, Zhang, Li and Yurchenko}]{Wang2020}
+\bibinfo{author}{Wang, J.}, \bibinfo{author}{Zhao, W.}, \bibinfo{author}{Su,
+  Z.}, \bibinfo{author}{Zhang, G.}, \bibinfo{author}{Li, P.},
+  \bibinfo{author}{Yurchenko, D.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{{Enhancing vortex-induced vibrations of a cylinder
+  with rod attachments for hydrokinetic power generation}}.
+\newblock \bibinfo{journal}{Mechanical Systems and Signal Processing}
+  \bibinfo{volume}{145}, \bibinfo{pages}{106912}.
+\newblock \DOIprefix\doi{10.1016/j.ymssp.2020.106912}.
+%Type = Article
+\bibitem[{Zhao and Lu(2018)}]{Zhao2018a}
+\bibinfo{author}{Zhao, M.}, \bibinfo{author}{Lu, L.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{Numerical simulation of flow past two circular
+  cylinders in cruciform arrangement}}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{848},
+  \bibinfo{pages}{1013--1039}.
+\newblock \URLprefix
+  \url{https://www.cambridge.org/core/product/identifier/S0022112018003804/type/journal{\_}article},
+  \DOIprefix\doi{10.1017/jfm.2018.380}.
 
 \end{thebibliography}
