@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{21}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -106,6 +106,17 @@
 \newblock \bibinfo{journal}{Journal of Fluids and Structures}
   \bibinfo{volume}{30}, \bibinfo{pages}{97--114}.
 %Type = Article
+\bibitem[{Khalak and Williamson(1999)}]{Khalak1999}
+\bibinfo{author}{Khalak, A.}, \bibinfo{author}{Williamson, C.},
+  \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{{Motions, Forces And Mode Transitions In
+  Vortex-Induced Vibrations At Low Mass-Damping}}.
+\newblock \bibinfo{journal}{Journal of Fluids and Structures}
+  \bibinfo{volume}{13}, \bibinfo{pages}{813--851}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0889974699902360},
+  \DOIprefix\doi{10.1006/jfls.1999.0236}.
+%Type = Article
 \bibitem[{Koide et~al.(2006)Koide, Ootani, Yamada, Takahashi and
   Shirakashi}]{Koide2006}
 \bibinfo{author}{Koide, M.}, \bibinfo{author}{Ootani, K.},
@@ -136,6 +147,14 @@
   shedding from cruciform two-cylinder systems with different geometries}}.
 \newblock \bibinfo{journal}{Journal of Visualization} , \bibinfo{pages}{1--11}.
 %Type = Article
+\bibitem[{Lv(2019)}]{Lv2019}
+\bibinfo{author}{Lv, H.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{{Noise suppression of microseismic data based on a
+  fast singular value decomposition algorithm}}.
+\newblock \bibinfo{journal}{Journal of Applied Geophysics}
+  \bibinfo{volume}{170}, \bibinfo{pages}{103831}.
+\newblock \DOIprefix\doi{10.1016/j.jappgeo.2019.103831}.
+%Type = Article
 \bibitem[{Nguyen et~al.(2010)Nguyen, Koide, Takahashi and
   Shirakashi}]{Nguyen2010}
 \bibinfo{author}{Nguyen, T.}, \bibinfo{author}{Koide, M.},
@@ -156,6 +175,24 @@
 \newblock \bibinfo{journal}{Journal of Fluids and Structures}
   \bibinfo{volume}{28}, \bibinfo{pages}{40--55}.
 \newblock \DOIprefix\doi{10.1016/j.jfluidstructs.2011.10.006}.
+%Type = Phdthesis
+\bibitem[{Raghavan(2007)}]{Raghavan2007}
+\bibinfo{author}{Raghavan, K.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{{Energy Extraction from a Steady Flow Using Vortex
+  Induced Vibration.}}
+\newblock \bibinfo{type}{Doctoral dissertation}. The University of Michigan.
+\newblock \URLprefix \url{http://deepblue.lib.umich.edu/handle/2027.42/55687}.
+%Type = Article
+\bibitem[{Shifat and Hur(2020)}]{Shifat2020}
+\bibinfo{author}{Shifat, T.A.}, \bibinfo{author}{Hur, J.W.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{{EEMD assisted supervised learning for the fault
+  diagnosis of BLDC motor using vibration signal}}.
+\newblock \bibinfo{journal}{Journal of Mechanical Science and Technology}
+  \bibinfo{volume}{34}, \bibinfo{pages}{3981--3990}.
+\newblock \URLprefix
+  \url{https://link.springer.com/article/10.1007/s12206-020-2208-7},
+  \DOIprefix\doi{10.1007/s12206-020-2208-7}.
 %Type = Article
 \bibitem[{Shirakashi et~al.(1989)Shirakashi, Mizuguchi and
   Bae}]{Shirakashi1989}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.4)  16 NOV 2020 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.4)  17 NOV 2020 23:14
 entering extended mode
 **./replyToReviewers.tex
 (replyToReviewers.tex
@@ -129,9 +129,6 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/caption\subcaption.sty"
-Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-
 ("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption.sty"
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
@@ -149,6 +146,8 @@ Package caption Info: Standard document class detected.
 \c@caption@flags=\count199
 \c@continuedfloat=\count266
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\subcaption.sty"
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 \c@subfigure=\count267
 \c@subtable=\count268
 )
@@ -247,25 +246,42 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\dvipsnam.def"
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen177
+\Gin@req@width=\dimen178
+)
 \c@question=\count287
 
 (replyToReviewers.aux)
 \openout1 = `replyToReviewers.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -304,129 +320,129 @@ LaTeX Font Info:    ... okay on input line 27.
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count288
-\scratchdimen=\dimen177
+\scratchdimen=\dimen179
 \scratchbox=\box59
 \nofMPsegments=\count289
 \nofMParguments=\count290
 \everyMPshowfont=\toks25
 \MPscratchCnt=\count291
-\MPscratchDim=\dimen178
+\MPscratchDim=\dimen180
 \MPnumerator=\count292
 \makeMPintoPDFobject=\count293
 \everyMPtoPDFconversion=\toks26
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/siunitx\siunitx-abbreviations.cfg"
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator-basic-dictionary-
 English.dict"
 Dictionary: translator-basic-dictionary, Language: English 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
 [1
 
 {C:/Users/alan_/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 186--189
+Underfull \hbox (badness 10000) in paragraph at lines 189--192
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 [5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
 
@@ -435,27 +451,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
+<./figs//ystrU02Full.pdf, id=43, 194.16692pt x 131.69057pt>
+File: ./figs//ystrU02Full.pdf Graphic file (type pdf)
+<use ./figs//ystrU02Full.pdf>
+Package pdftex.def Info: ./figs//ystrU02Full.pdf  used on input line 353.
+(pdftex.def)             Requested size: 194.16644pt x 131.69023pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
+
+ []
+
+[10 <./figs//ystrU02Full.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--356
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 408--415
 
  []
 
-(replyToReviewers.bbl [10]
+[12] (replyToReviewers.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 27--38
 []\OT1/cmr/m/n/12 Ding, L., Bernit-sas, M.M., Kim, E.S., 2013.  2-D URANS vs. e
 x-per-i-ments
@@ -527,33 +553,57 @@ Underfull \hbox (badness 2680) in paragraph at lines 88--100
 -ence and Tech-nol-ogy
  []
 
-[11]
-Underfull \hbox (badness 2762) in paragraph at lines 191--199
+
+Underfull \hbox (badness 1210) in paragraph at lines 110--121
+[]\OT1/cmr/m/n/12 Khalak, A., Williamson, C., 1999.  Mo-tions, Forces And Mode 
+Tran-si-tions In Vortex-
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 110--121
+\OT1/cmr/m/n/12 851.  URL: \OT1/cmtt/m/n/12 http://www.sciencedirect.com/scienc
+e/article/pii/S0889974699902360\OT1/cmr/m/n/12 ,
+ []
+
+[13]
+Underfull \hbox (badness 5637) in paragraph at lines 180--186
+[]\OT1/cmr/m/n/12 Raghavan, K., 2007.  En-ergy Ex-trac-tion from a Steady Flow 
+Us-ing Vor-tex In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--186
+\OT1/cmr/m/n/12 duced Vi-bra-tion.  Doc-toral dis-ser-ta-tion. The Uni-ver-sity
+ of Michi-gan.  URL:
+ []
+
+[14]
+Underfull \hbox (badness 2762) in paragraph at lines 228--236
 []\OT1/cmr/m/n/12 Zhao, M., Lu, L., 2018.  Nu-mer-i-cal sim-u-la-tion of flow p
 ast two cir-cu-lar cylin-ders
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 191--199
+Underfull \hbox (badness 4416) in paragraph at lines 228--236
 \OT1/cmr/m/n/12 in cru-ci-form ar-range-ment.  Jour-nal of Fluid Me-chan-ics 84
 8, 1013--1039.  URL:
  []
 
 
-Overfull \hbox (56.201pt too wide) in paragraph at lines 191--199
+Overfull \hbox (56.201pt too wide) in paragraph at lines 228--236
 \OT1/cmtt/m/n/12 https://www.cambridge.org/core/product/identifier/S00221120180
 03804/type/journal[]article\OT1/cmr/m/n/12 ,
  []
 
-) [12] (replyToReviewers.aux) ) 
+) [15] (replyToReviewers.aux) ) 
 Here is how much of TeX's memory you used:
- 6930 strings out of 479765
- 137248 string characters out of 2876357
- 407930 words of memory out of 3000000
- 23891 multiletter control sequences out of 15000+200000
- 543928 words of font info for 60 fonts, out of 3000000 for 9000
+ 7223 strings out of 479765
+ 141567 string characters out of 2876357
+ 413820 words of memory out of 3000000
+ 24165 multiletter control sequences out of 15000+200000
+ 544605 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,10n,74p,1116b,915s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,10n,73p,1116b,915s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-
 super/cm-super-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
@@ -563,13 +613,14 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmti8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on replyToReviewers.pdf (12 pages, 187898 bytes).
+blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on replyToReviewers.pdf (15 pages, 400415 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 143 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

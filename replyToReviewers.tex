@@ -5,10 +5,13 @@
 \usepackage{color}
 \usepackage[authoryear]{natbib}
 \usepackage{amsmath}
+\usepackage{caption}
 \usepackage{subcaption}
 \usepackage{siunitx}
 \usepackage{setspace}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\graphicspath{ {./figs/} }
 
 \newcounter{question}
 \newcommand{\name}{00}
@@ -133,7 +136,7 @@
 \question{Why OpenFOAM is employed? If other software can be employed to solve the calculation?} \label{quest:whyOF}
 
 \answer{
-    In our opinion, any CFD software can be employed by a proficient enough user as a means to gain important numerical insight upon a fluid mechanics project. A fluid mechanics project can be of different scales: some are targeted at an individual level, dealing with relatively idealised environments as is the case in an undergraduate class on computational fluid dynamics. However, as soon as the project is commissioned at a more advanced level, e.g. post-graduate or industrial setting, we think that the tool chosen to execute the CFD must fulfill the following criteria.
+  In our opinion, any CFD software can be employed by a proficient enough user as a means to gain important insight on a subject of study. A numerical study in the area of fluid mechanics, as in other disciplines, can be of differing levels of complexity. Some are meant to be instructional, and these deal with relatively idealised cases, especially in a classroom setting. However, in a post-graduate or industrial setting, we think it is in the interest of the researcher(s) that the tool chosen to execute the numerical study fulfill the following criteria.
 
     \begin{enumerate}
         \item The algorithm required to carry out the numerical work must be built into the software. Else, the software itself must be easily extensible to include the numerical routine required. \label{enum:extensible}
@@ -337,23 +340,79 @@ In this work, we used the Courant–Friedrichs–Lewy (CFL) number as the basis 
 
 \question{Looks like that the values still going to decline in Fig 12(a). It means that the vibration here still doesn't stable?}
 
+\answer{
+  The $\ystr$ and Cl signals presented in Fig. 12(a) are the results at $\ured = \urtw$, and at $\ured = \urtw$, the cylinder vibration is in the initial branch of KVIV. Among the vibration characteristics of a VIV oscillator in the initial branch is its quasi-periodic nature \citep{Khalak1999}, which implies a modulated vibration amplitude along the time axis, where it increases and decreases cyclically. This is most simply demonstrated through a full flow time visualisation of $\ystr$ at $\ured = \urtw$, shown in Fig. 1, which bears striking resemblance to Fig. 15 of \citep{Khalak1999}.
 
-\answer{Answer}
+  \begin{figure}[htpb]
+    \centering
+    \includegraphics{ystrU02Full}
+    \caption*{Figure 1: Full flow time visualisation of $\ystr$ at $\ured = \urtw$}
+  \end{figure} \label{fig:fullFlowtimeU02}
+
+  Our choice of omitting the full flow time in our Hilbert-Huang transform (HHT) analysis is because the pre-processing algorithm EEMD is computationally expensive \citep{Lv2019,Shifat2020}, and we therefore limit ourselves only to a subset of the data instead.
+}
 
 \question{How it's possible that $\pfrms < \pmrms$ for a given reduced velocity (Fig 20)?}
 
-\answer{Answer}
+\answer{
+  Unlike the original equation to compute fluid power, shown in Eq. \ref{eq:rmsFluidPower},
+
+  \begin{equation}
+    \pfrms = \frac{1}{2} \rho \pi \cclrms U^{2} \fcyl \yrms D L \sin(\phi),
+    \label{eq:rmsFluidPower}
+  \end{equation}
+
+  \noindent the original form of the equation in \citet{Raghavan2007} used what basically amounts to maximum lift amplitude $C_{y}$ in place of $\cclrms$, and the maximum cylinder displacement amplitude $y_{\text{max.}}$ in place of $\yrms$.
+
+  As mentioned in the original manuscript,
+
+  \begin{quotation}
+    \hspace*{-1.3cm} {\Large \textbf{``}} We use $\cclys$ to represent $\cclrms$ in Eq. 26. We choose to use \rms{} (parameters with subscript RMS) quantities in Eq. 25 instead of the maximum values like the original authors because that may lead to a misunderstanding that the maximum value is sustained throughout the observation window. {\Large \textbf{''}}
+  \end{quotation}
+
+  \noindent Therefore, $\pfrms$ as defined in Eq. \ref{eq:rmsFluidPower} estimates the \rms{} power obtainable from the streamwise component of lift alone, and not the total lift acting on the cylinder. This means that $\pfrms$ will only be approximately equal to $\pmrms$ if $\cclrms$ is the dominant component of the total lift \textbf{\textit{and}} the phase lag $\phi$ is close to \SI{90}{\degree}. The observation $\pfrms < \pmrms$ made by the reviewer simply means that these conditions are not satisfied.
+}
 
 \question{The fluid power is possible to improve by redirect the energy from the Karman to the streamwise vortex, and how it realizes? It's suggested to clarify a possible measure for it, or try to put forward an example.}
 
-\answer{Answer}
+\answer{
+  In the SVIV regime, the energy carried by the freestream is converted into three components, namely,
+
+  \begin{enumerate}
+    \item the generation of turbulence,
+    \item the production of streamwise vortices, and
+    \item the generation of Karman vortices.
+  \end{enumerate}
+
+  \noindent In other words,
+
+  \begin{equation}
+    \text{Freestream energy} = \text{Turbulence} + \text{Streamwise vortices} + \text{Karman vortices}.
+    \label{eq:freesteamEnergy}
+  \end{equation}
+  
+  \noindent To improve the power output of a cruciform energy harvester in the SVIV regime, the basic idea is to maximise the conversion of freestream energy into streamwise vortices, amplifying the \rms{} amplitude of the streamwise component of lift. One possible method to achieve this is by modifying the strip plate, which essentially is a passive downstream control mechanism, in a manner that enforces the dominance of the vortical structure that is able to lock into the natural frequency of the system $\fn$. This will lead to a larger $\cclys$, $\cysys$, ultimately $\pfrms$ and $\pmrms$. This is the subject of our next publication. However, following the suggestion of the reviewer, we deleted the following sentence,
+
+
+  \begin{quotation}
+    \hspace*{-1.3cm} {\Large \textbf{``}} We shall detail in our future work, a method to modulate the dominant vortical structures to achieve such a goal. {\Large \textbf{''}}
+  \end{quotation}
+
+  \noindent and included the following sentences in its place.
+
+  \begin{quotation}
+    \color{blue}
+    \noindent One possible method of improving $\pfrms$ is by implementing a modified version of the cruciform that is able to enforce the dominance of the vortical structure that is able to lock into $\fn$ - which in Fig. 22 is the streamwise vortex - against the vortical structures that do not, i.e., the Karman vortices. We will outline such a method in our future work.
+  \end{quotation}
+  \color{black}
+}
 % \newperson{Reviewer 3}{R3}
 % 
 % \question{Question}
 % 
 % \answer{Answer}
 % >>>
-
+\newpage
 \bibliographystyle{cas-model2-names}
 \bibliography{references}
 

@@ -10,45 +10,45 @@ Repeated entry---line 1274 of file references.bib
  :                   ,
 I'm skipping whatever remains of this entry
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 17 entries,
+You've used 21 entries,
             2990 wiz_defined-function locations,
-            876 strings with 10807 characters,
-and the built_in function-call counts, 12920 in all, are:
-= -- 1012
-> -- 570
-< -- 1
-+ -- 220
-- -- 201
-* -- 1536
-:= -- 1877
-add.period$ -- 63
-call.type$ -- 17
-change.case$ -- 152
-chr.to.int$ -- 15
-cite$ -- 17
-duplicate$ -- 897
-empty$ -- 879
-format.name$ -- 254
-if$ -- 2365
+            914 strings with 11795 characters,
+and the built_in function-call counts, 15281 in all, are:
+= -- 1216
+> -- 626
+< -- 5
++ -- 242
+- -- 219
+* -- 1776
+:= -- 2221
+add.period$ -- 79
+call.type$ -- 21
+change.case$ -- 178
+chr.to.int$ -- 19
+cite$ -- 21
+duplicate$ -- 1081
+empty$ -- 1066
+format.name$ -- 284
+if$ -- 2815
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 185
-newline$ -- 112
-num.names$ -- 68
-pop$ -- 284
+missing$ -- 218
+newline$ -- 136
+num.names$ -- 84
+pop$ -- 339
 preamble$ -- 1
-purify$ -- 135
+purify$ -- 157
 quote$ -- 0
-skip$ -- 231
+skip$ -- 288
 stack$ -- 0
-substring$ -- 592
-swap$ -- 713
+substring$ -- 710
+swap$ -- 837
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 153
+type$ -- 189
 warning$ -- 0
-while$ -- 83
+while$ -- 100
 width$ -- 0
-write$ -- 283
+write$ -- 349
 (There was 1 error message)
