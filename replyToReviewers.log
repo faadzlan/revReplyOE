@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.4)  17 NOV 2020 23:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.4)  18 NOV 2020 14:02
 entering extended mode
 **./replyToReviewers.tex
 (replyToReviewers.tex
@@ -6,8 +6,8 @@ LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-10-27> xparse <2020-03-03>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
-File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count175
 \c@section=\count176
@@ -302,12 +302,12 @@ LaTeX Font Info:    ... okay on input line 30.
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -354,14 +354,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-[1
 
-{C:/Users/alan_/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
+[1
 
+{C:/Users/alan_/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
@@ -381,12 +381,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 189--192
 
  []
 
-[3]
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
@@ -406,12 +406,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
-[4]
+
 Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
@@ -421,7 +421,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
-[5] [6] [7]
+[4] [5]
 Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
@@ -431,7 +431,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
-[8]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
@@ -441,7 +441,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
-[9]
+
 Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
@@ -451,17 +451,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
-<./figs//ystrU02Full.pdf, id=43, 194.16692pt x 131.69057pt>
+<./figs//ystrU02Full.pdf, id=33, 194.16692pt x 131.69057pt>
 File: ./figs//ystrU02Full.pdf Graphic file (type pdf)
 <use ./figs//ystrU02Full.pdf>
 Package pdftex.def Info: ./figs//ystrU02Full.pdf  used on input line 353.
 (pdftex.def)             Requested size: 194.16644pt x 131.69023pt.
-
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
  []
 
-[10 <./figs//ystrU02Full.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
@@ -476,151 +476,164 @@ Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
-[11]
+[8 <./figs//ystrU02Full.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 408--415
 
  []
 
-[12] (replyToReviewers.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 27--38
-[]\OT1/cmr/m/n/12 Ding, L., Bernit-sas, M.M., Kim, E.S., 2013.  2-D URANS vs. e
-x-per-i-ments
+[9] (replyToReviewers.bbl
+Underfull \hbox (badness 3199) in paragraph at lines 16--26
+[]\OT1/cmr/m/n/10 Deng, J., Ren, A.L., Shao, X.M., 2007.  The flow be-tween a s
+ta-tion-ary cylin-der and a down-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--38
-\OT1/cmr/m/n/12 of flow in-duced mo-tions of two cir-cu-lar cylin-ders in tan-d
-em with pas-
+Underfull \hbox (badness 10000) in paragraph at lines 16--26
+\OT1/cmr/m/n/10 stream elas-tic cylin-der in cru-ci-form ar-range-ment.  Jour-n
+al of Flu-ids and Struc-tures 23,
  []
 
 
-Underfull \hbox (badness 8075) in paragraph at lines 27--38
-\OT1/cmr/m/n/12 sive tur-bu-lence con-trol for 30,000.  Ocean En-gi-neer-ing 72
-, 429--440.  URL:
+Underfull \hbox (badness 10000) in paragraph at lines 16--26
+\OT1/cmr/m/n/10 715--731.  URL: \OT1/cmtt/m/n/10 https://www.sciencedirect.com/
+science/article/pii/S0889974606001472\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--38
-\OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/article/pii/S002980181300
-2448?via%3Dihub\OT1/cmr/m/n/12 ,
+Underfull \hbox (badness 1184) in paragraph at lines 27--38
+\OT1/cmr/m/n/10 two cir-cu-lar cylin-ders in tan-dem with pas-sive tur-bu-lence
+ con-trol for 30,000.  Ocean En-gi-neer-ing 72,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--50
-\OT1/cmr/m/n/12 URL: \OT1/cmtt/m/n/12 https://www.sciencedirect.com/science/art
-icle/pii/S0029801819304019\OT1/cmr/m/n/12 ,
+[]\OT1/cmr/m/n/10 Ding, W., Sun, H., Xu, W., Bernit-sas, M.M., 2019.  Nu-mer-i-
+cal in-ves-ti-ga-tion on in-ter-ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--87
-[]\OT1/cmr/m/n/12 Hemsuwan, W., Sakamoto, K., Taka-hashi, T., 2018c.  Nu-mer-i-
-cal in-ves-ti-ga-
+Underfull \hbox (badness 5077) in paragraph at lines 39--50
+\OT1/cmr/m/n/10 tive FIO of two-tandem cylin-ders for hy-droki-netic en-ergy ha
+r-ness-ing.  Ocean En-gi-neer-ing 187,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--87
-\OT1/cmr/m/n/12 tion of lift-force gen-er-a-tion on a mov-ing cir-cu-lar cylin-
-der in a uni-form flow
+Underfull \hbox (badness 10000) in paragraph at lines 39--50
+\OT1/cmr/m/n/10 106215.  URL: \OT1/cmtt/m/n/10 https://www.sciencedirect.com/sc
+ience/article/pii/S0029801819304019\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 6364) in paragraph at lines 77--87
-\OT1/cmr/m/n/12 driven by lon-gi-tu-di-nal vor-tex.  Jour-nal of Flu-ids and St
-ruc-tures 83, 448--470.
+Underfull \hbox (badness 4229) in paragraph at lines 51--63
+[]\OT1/cmr/m/n/10 Hemsuwan, W., Sakamoto, K., Nakada, S., Taka-hashi, T., 2018a
+.  A lon-gi-tu-di-nal vor-tex wind
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--87
-\OT1/cmr/m/n/12 URL: \OT1/cmtt/m/n/12 https://www.sciencedirect.com/science/art
-icle/pii/S0889974617308885\OT1/cmr/m/n/12 ,
+Underfull \hbox (badness 7981) in paragraph at lines 51--63
+\OT1/cmr/m/n/10 tur-bine: Nu-mer-i-cal study.  Jour-nal of Wind En-gi-neer-ing 
+and In-dus-trial Aero-dy-nam-ics 180,
  []
 
 
-Underfull \hbox (badness 4454) in paragraph at lines 88--100
-[]\OT1/cmr/m/n/12 Kato, N., Koide, M., Taka-hashi, T., Shi-rakashi, M., 2006.  
-In-flu-ence of Cross-
+Underfull \hbox (badness 10000) in paragraph at lines 51--63
+\OT1/cmr/m/n/10 213--230.  URL: \OT1/cmtt/m/n/10 https://www.sciencedirect.com/
+science/article/pii/S0167610518301612\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 88--100
-\OT1/cmr/m/n/12 Sectional Con-fig-u-ra-tion on the Lon-gi-tu-di-nal Vor-tex Ex-
-ci-ta-tion of the Up-stream Cylin-
+Underfull \hbox (badness 4156) in paragraph at lines 64--76
+[]\OT1/cmr/m/n/10 Hemsuwan, W., Sakamoto, K., Nakada, S., Taka-hashi, T., 2018b
+.  A lon-gi-tu-di-nal vor-tex wind
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 88--100
-\OT1/cmr/m/n/12 der in Cru-ci-form Two-Cylinder Sys-tem.  Jour-nal of Fluid Sci
--ence and Tech-nol-ogy
+Underfull \hbox (badness 7981) in paragraph at lines 64--76
+\OT1/cmr/m/n/10 tur-bine: Nu-mer-i-cal study.  Jour-nal of Wind En-gi-neer-ing 
+and In-dus-trial Aero-dy-nam-ics 180,
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 110--121
-[]\OT1/cmr/m/n/12 Khalak, A., Williamson, C., 1999.  Mo-tions, Forces And Mode 
-Tran-si-tions In Vortex-
+Underfull \hbox (badness 10000) in paragraph at lines 64--76
+\OT1/cmr/m/n/10 213--230.  URL: \OT1/cmtt/m/n/10 https://www.sciencedirect.com/
+science/article/pii/S0167610518301612\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 110--121
-\OT1/cmr/m/n/12 851.  URL: \OT1/cmtt/m/n/12 http://www.sciencedirect.com/scienc
-e/article/pii/S0889974699902360\OT1/cmr/m/n/12 ,
- []
-
-[13]
-Underfull \hbox (badness 5637) in paragraph at lines 180--186
-[]\OT1/cmr/m/n/12 Raghavan, K., 2007.  En-ergy Ex-trac-tion from a Steady Flow 
-Us-ing Vor-tex In-
+Underfull \hbox (badness 1237) in paragraph at lines 77--87
+\OT1/cmr/m/n/10 a mov-ing cir-cu-lar cylin-der in a uni-form flow driven by lon
+-gi-tu-di-nal vor-tex.  Jour-nal of Flu-ids and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--186
-\OT1/cmr/m/n/12 duced Vi-bra-tion.  Doc-toral dis-ser-ta-tion. The Uni-ver-sity
- of Michi-gan.  URL:
- []
-
-[14]
-Underfull \hbox (badness 2762) in paragraph at lines 228--236
-[]\OT1/cmr/m/n/12 Zhao, M., Lu, L., 2018.  Nu-mer-i-cal sim-u-la-tion of flow p
-ast two cir-cu-lar cylin-ders
+Underfull \hbox (badness 6252) in paragraph at lines 110--121
+[]\OT1/cmr/m/n/10 Khalak, A., Williamson, C., 1999.  Mo-tions, Forces And Mode 
+Tran-si-tions In Vortex-Induced
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 228--236
-\OT1/cmr/m/n/12 in cru-ci-form ar-range-ment.  Jour-nal of Fluid Me-chan-ics 84
-8, 1013--1039.  URL:
+Underfull \hbox (badness 7012) in paragraph at lines 110--121
+\OT1/cmr/m/n/10 Vi-bra-tions At Low Mass-Damping.  Jour-nal of Flu-ids and Stru
+c-tures 13, 813--851.  URL:
+ []
+
+[10]
+Underfull \hbox (badness 1394) in paragraph at lines 187--198
+[]\OT1/cmr/m/n/10 Shifat, T.A., Hur, J.W., 2020.  EEMD as-sisted su-per-vised l
+earn-ing for the fault di-ag-no-sis of BLDC
  []
 
 
-Overfull \hbox (56.201pt too wide) in paragraph at lines 228--236
-\OT1/cmtt/m/n/12 https://www.cambridge.org/core/product/identifier/S00221120180
-03804/type/journal[]article\OT1/cmr/m/n/12 ,
+Underfull \hbox (badness 1117) in paragraph at lines 187--198
+\OT1/cmr/m/n/10 mo-tor us-ing vi-bra-tion sig-nal.  Jour-nal of Me-chan-i-cal S
+ci-ence and Tech-nol-ogy 34, 3981--3990.  URL:
  []
 
-) [15] (replyToReviewers.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--236
+[]\OT1/cmr/m/n/10 Zhao, M., Lu, L., 2018.  Nu-mer-i-cal sim-u-la-tion of flow p
+ast two cir-cu-lar cylin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--236
+\OT1/cmr/m/n/10 ders in cru-ci-form ar-range-ment.  Jour-nal of Fluid Me-chan-i
+cs 848, 1013--1039.  URL:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--236
+\OT1/cmtt/m/n/10 https://www.cambridge.org/core/product/identifier/S00221120180
+03804/type/journal[]article\OT1/cmr/m/n/10 ,
+ []
+
+) [11] (replyToReviewers.aux) ) 
 Here is how much of TeX's memory you used:
- 7223 strings out of 479765
- 141567 string characters out of 2876357
- 413820 words of memory out of 3000000
- 24165 multiletter control sequences out of 15000+200000
- 544605 words of font info for 62 fonts, out of 3000000 for 9000
+ 7202 strings out of 479765
+ 141341 string characters out of 2876357
+ 415783 words of memory out of 3000000
+ 24153 multiletter control sequences out of 15000+200000
+ 540946 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,10n,73p,1116b,915s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,10n,73p,1113b,917s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-
 super/cm-super-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
-ti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on replyToReviewers.pdf (15 pages, 400415 bytes).
+/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on replyToReviewers.pdf (11 pages, 419078 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
+ 134 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
