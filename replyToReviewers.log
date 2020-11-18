@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.4)  18 NOV 2020 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.4)  18 NOV 2020 20:07
 entering extended mode
 **./replyToReviewers.tex
 (replyToReviewers.tex
@@ -354,14 +354,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
+[1
 
+{C:/Users/alan_/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-[1
 
-{C:/Users/alan_/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
@@ -381,12 +381,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 189--192
 
  []
 
-[2]
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
@@ -406,12 +406,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
@@ -421,17 +421,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
-[4] [5]
+[5] [6]
 Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
-
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
-[6]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
@@ -441,7 +441,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
-
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
@@ -451,12 +451,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
-<./figs//ystrU02Full.pdf, id=33, 194.16692pt x 131.69057pt>
+<./figs//ystrU02Full.pdf, id=44, 194.16692pt x 131.69057pt>
 File: ./figs//ystrU02Full.pdf Graphic file (type pdf)
 <use ./figs//ystrU02Full.pdf>
 Package pdftex.def Info: ./figs//ystrU02Full.pdf  used on input line 353.
 (pdftex.def)             Requested size: 194.16644pt x 131.69023pt.
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
  []
@@ -466,7 +466,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
 
-
+[10 <./figs//ystrU02Full.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 374--375
 
  []
@@ -476,12 +476,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
-[8 <./figs//ystrU02Full.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 408--415
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 407--414
 
  []
 
-[9] (replyToReviewers.bbl
+[12] (replyToReviewers.bbl
 Underfull \hbox (badness 3199) in paragraph at lines 16--26
 []\OT1/cmr/m/n/10 Deng, J., Ren, A.L., Shao, X.M., 2007.  The flow be-tween a s
 ta-tion-ary cylin-der and a down-
@@ -577,7 +577,7 @@ Underfull \hbox (badness 7012) in paragraph at lines 110--121
 c-tures 13, 813--851.  URL:
  []
 
-[10]
+[13]
 Underfull \hbox (badness 1394) in paragraph at lines 187--198
 []\OT1/cmr/m/n/10 Shifat, T.A., Hur, J.W., 2020.  EEMD as-sisted su-per-vised l
 earn-ing for the fault di-ag-no-sis of BLDC
@@ -607,33 +607,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--236
 03804/type/journal[]article\OT1/cmr/m/n/10 ,
  []
 
-) [11] (replyToReviewers.aux) ) 
+[14]) [15] (replyToReviewers.aux) ) 
 Here is how much of TeX's memory you used:
  7202 strings out of 479765
  141341 string characters out of 2876357
- 415783 words of memory out of 3000000
+ 412799 words of memory out of 3000000
  24153 multiletter control sequences out of 15000+200000
  540946 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,10n,73p,1113b,917s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-
-super/cm-super-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on replyToReviewers.pdf (11 pages, 419078 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips
+/cm-super/cm-super-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on replyToReviewers.pdf (15 pages, 421973 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

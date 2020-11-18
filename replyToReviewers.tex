@@ -25,7 +25,7 @@
 
 \newcommand{\newperson}[2]{\renewcommand{\name}{#2} \setcounter{question}{0} \noindent \textbf{\large Answers to #1} \\}
 
-\onehalfspacing
+\doublespacing
 
 \begin{document}
 
@@ -255,7 +255,7 @@ In this work, we used the Courant–Friedrichs–Lewy (CFL) number as the basis 
     \item the $W = w/D$ for our strip plate is $W = 1$,
   \end{enumerate}
 
-  \noindent the level of turbulence in the flow, and the level of disturbance/noise resulting from it becomes an increasingly important factor in determining the evolution of the dominant flow structures, and the resulting cylinder amplitude response. The jump-drop-rise pattern observed in the amplitude responses of both our experimental and numerical work is, in our opinion, the result of an interplay between the level of disturbance/noise due to increasingly turbulent flow conditions and the ability of the streamwise vortex to withstand said disturbance. As we have alluded to in the manuscript,
+  \noindent the level of turbulence in the flow, and the level of disturbance/noise resulting from it becomes an increasingly important factor in determining the evolution of the dominant flow structures, and the resulting cylinder amplitude response. The jump-drop-rise pattern observed in the amplitude responses of both our experimental and numerical work is, in our opinion, the result of an interplay between the level of disturbance/noise due to increasingly turbulent flow conditions and the ability of the streamwise vortex to withstand said disturbance. As we have alluded to in page 15, lines 10-17 of the original manuscript,
 
   \begin{quotation}
     \noindent {\Large \textbf{``}} We, therefore, attribute this difference to the higher turbulence level set in our work. The turbulence level in the works of \citet{Nguyen2012}, for example, was  $<2.8\%$ throughout their range of Reynolds number. Instead, the initial turbulence level in our setup, both experimental and numerical, is approximately double that value. Because of this, the turbulence amplification due to the onset of streamwise vortices  \citep{Zhao2018a} - especially for a circular cylinder-strip plate cruciform \citep{Koide2017} - is also higher compared to the experiments of \citet{Nguyen2012} and \citet{Koide2013}. This higher compound turbulence warps the dominant vortical structure and introduces an increasing amount of intermittency to the lift signal, and by extension, to the displacement time history of the cylinder. {\Large \textbf{''}}
@@ -289,7 +289,7 @@ In this work, we used the Courant–Friedrichs–Lewy (CFL) number as the basis 
 \question{The CFD over predict the frequency response and the value of St in low reduced velocity range (Fig 10), is this caused by the boundary condition or the size of computational domain?}
 
 \answer{
-  In the original manuscript, we explained the discrepancy highlighted by the reviewer as follows.
+  In the original manuscript, we explained the discrepancy highlighted by the reviewer in page 18, lines 4-11:
 
   \begin{quotation}
     \noindent {\Large \textbf{``}} The discrepancies found especially in Fig. 10b most probably stem from the same reasons explained by \citet{Nguyen2012}. The lowest  $\yrms$ recorded in our simulation within  $\urth \leq \ured \leq \ursi$ was in the order of $10^{-5}$ \si{\metre} (10 microns). A numerical study has no problem recording vibration of this order as the precision of the numerical solution is only limited by the processor architecture. Experimental work, however, requires not only the sensitivity but also the isolation from the background noise that forces the cylinder to vibrate close to the natural frequency of the system  $\fn$ \citep{Nguyen2012}, which consequently overpowers this minimal amplitude vibration. Once streamwise vortices form, however, their shedding and cylinder vibration synchronises close to $\fn$, thus locking the normalised vibration frequency back to  $\fstr \approx 1$. {\Large \textbf{''}}
@@ -298,12 +298,12 @@ In this work, we used the Courant–Friedrichs–Lewy (CFL) number as the basis 
   Recall that the frequency overshoot occurs within a range of $\ured$ where the vibration amplitude of the cylinder is especially small. In fact, this region of especially small vibration amplitude - in the order of 10 microns in our simulation - has been reported by \citet{Nguyen2012} and \citet{Nguyen2010} as the region where selective resonance takes place (see, e.g., \S4.3 of \citet{Nguyen2010} and \S4.3 of \citet{Nguyen2012}). When said selective resonance takes place, the randomly appearing external excitation causes the frequency spectra of the cylinder displacement to register a frequency close to the natural frequency of the system $\fn$ - in other words, $\fstr \approx 1$ - as the dominant frequency, overpowering the actual frequency at which the cylinder vibrates. In our humble understanding of their work, \citet{Nguyen2010} and \citet{Nguyen2012} simply excluded the data points that results from the selective resonance - all of which are close to $\fn$ - from their frequency response plot. We provide the original quote from \S4.3 of \citet{Nguyen2012} below.
 
   \begin{quotation}
-    {\Large \textbf{``}} It is noted that when the oscillation amplitude is small in air flow, the spectrum of displacement, $S_{z}$, has a peak at $\fn$, in addition to $f_{v}$, due to the selective resonance which commonly occurs for a low-damped system exerted by alternating force having broadly distributing spectrum as shown in Fig. 4. In Fig. 7, and in the following figures in this paper, such data for $f_{z}$ are not plotted. {\Large \textbf{''}}
+    \noindent {\Large \textbf{``}} It is noted that when the oscillation amplitude is small in air flow, the spectrum of displacement, $S_{z}$, has a peak at $\fn$, in addition to $f_{v}$, due to the selective resonance which commonly occurs for a low-damped system exerted by alternating force having broadly distributing spectrum as shown in Fig. 4. In Fig. 7, and in the following figures in this paper, such data for $f_{z}$ are not plotted. {\Large \textbf{''}}
   \end{quotation}
 
   We decided to adopt a different approach and reported our experimental results as-is, including those affected by the selective resonance. This is why our experimental measurement of $\fstr$ returns a value close to 1 within $\urth \leq \ured \leq \ursi$. However, numerical studies are immune from the random external excitations that experimental investigations are subject to, unless they are explicitly defined in the numerical setup. Therefore, the overshot values of $\fstr$ are in our humble opinion the limit to which $\fstr$ will approach as random, external perturbations on the flow approaches zero.
 
-  Acknowledging the inadequacy of our explanation in the original manuscript, we added the following sentence in the revised version.
+  Acknowledging the inadequacy of our explanation in the original manuscript, we added the following sentence in the revised manuscript, page 19, lines 1-3.
 
   \begin{quotation}
     \color{blue}
@@ -364,10 +364,10 @@ In this work, we used the Courant–Friedrichs–Lewy (CFL) number as the basis 
 
   \noindent the original form of the equation in \citet{Raghavan2007} used what basically amounts to maximum lift amplitude $C_{y}$ in place of $\cclrms$, and the maximum cylinder displacement amplitude $y_{\text{max.}}$ in place of $\yrms$.
 
-  As mentioned in the original manuscript,
+  As mentioned in the original manuscript on page 27, lines 5-8,
 
   \begin{quotation}
-    {\Large \textbf{``}} We use $\cclys$ to represent $\cclrms$ in Eq. 26. We choose to use \rms{} (parameters with subscript RMS) quantities in Eq. 25 instead of the maximum values like the original authors because that may lead to a misunderstanding that the maximum value is sustained throughout the observation window. {\Large \textbf{''}}
+    \noindent {\Large \textbf{``}} We use $\cclys$ to represent $\cclrms$ in Eq. 26. We choose to use \rms{} (parameters with subscript RMS) quantities in Eq. 25 instead of the maximum values like the original authors because that may lead to a misunderstanding that the maximum value is sustained throughout the observation window. {\Large \textbf{''}}
   \end{quotation}
 
   \noindent Therefore, $\pfrms$ as defined in Eq. \ref{eq:rmsFluidPower} estimates the \rms{} power obtainable from the streamwise component of lift alone, and not the total lift acting on the cylinder. This means that $\pfrms$ will only be approximately equal to $\pmrms$ if $\cclrms$ is the dominant component of the total lift \textbf{\textit{and}} the phase lag $\phi$ is close to \SI{90}{\degree}. The observation $\pfrms < \pmrms$ made by the reviewer simply means that these conditions are not satisfied.
@@ -391,14 +391,13 @@ In this work, we used the Courant–Friedrichs–Lewy (CFL) number as the basis 
     \label{eq:freesteamEnergy}
   \end{equation}
   
-  \noindent To improve the power output of a cruciform energy harvester in the SVIV regime, the basic idea is to maximise the conversion of freestream energy into streamwise vortices, amplifying the \rms{} amplitude of the streamwise component of lift. One possible method to achieve this is by modifying the strip plate, which essentially is a passive downstream control mechanism, in a manner that enforces the dominance of the vortical structure that is able to lock into the natural frequency of the system $\fn$. This will lead to a larger $\cclys$, $\cysys$, and ultimately $\pfrms$ and $\pmrms$. This is the subject of our next publication. However, following the suggestion of the reviewer, we deleted the following sentence,
-
+  \noindent To improve the power output of a cruciform energy harvester in the SVIV regime, the basic idea is to maximise the conversion of freestream energy into streamwise vortices, amplifying the \rms{} amplitude of the streamwise component of lift. One possible method to achieve this is by modifying the strip plate, which essentially is a passive downstream control mechanism, in a manner that enforces the dominance of the vortical structure that is able to lock into the natural frequency of the system $\fn$. This will lead to a larger $\cclys$, $\cysys$, and ultimately $\pfrms$ and $\pmrms$. This is the subject of our next publication. However, following the suggestion of the reviewer, we deleted the following sentence from page 30, lines 11-12 of the original manuscript:
 
   \begin{quotation}
-    {\Large \textbf{``}} We shall detail in our future work, a method to modulate the dominant vortical structures to achieve such a goal. {\Large \textbf{''}}
+    \noindent {\Large \textbf{``}} We shall detail in our future work, a method to modulate the dominant vortical structures to achieve such a goal. {\Large \textbf{''}}
   \end{quotation}
 
-  \noindent and included the following sentences in its place.
+  \noindent and included the following sentences on page 31, lines 4-6  of the revised manuscript.
 
   \begin{quotation}
     \color{blue}
